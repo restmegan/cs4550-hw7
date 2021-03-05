@@ -1,0 +1,28 @@
+<h1>Listing Eventposts</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Desc</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for event_post <- @eventposts do %>
+    <tr>
+      <td><%= event_post.name %></td>
+      <td><%= event_post.desc %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.event_post_path(@conn, :show, event_post) %></span>
+        <span><%= link "Edit", to: Routes.event_post_path(@conn, :edit, event_post) %></span>
+        <span><%= link "Delete", to: Routes.event_post_path(@conn, :delete, event_post), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Event post", to: Routes.event_post_path(@conn, :new) %></span>

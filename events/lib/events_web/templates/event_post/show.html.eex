@@ -1,0 +1,18 @@
+<h1>Show Event post</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @event_post.name %>
+  </li>
+
+  <li>
+    <strong>Desc:</strong>
+    <%= @event_post.desc %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.event_post_path(@conn, :edit, @event_post) %></span>
+<span><%= link "Back", to: Routes.event_post_path(@conn, :index) %></span>
