@@ -1,5 +1,17 @@
 <div class="row">
   <div class="col">
-    Hello, World
+    <h1>Events</h1>
   </div>
+</div>
+
+<div class="row">
+  <%= for event_post <- @eventposts do %>
+    <div class="col-sm-4 card">
+      <div class="card-body">
+        <h6 class="card-title"><%= event_post.name %></h6>
+        <p class="card-text"><%= event_post.desc %></p>
+        <%= link "view", to: Routes.event_post_path(@conn, :show, event_post) %>
+      </div>
+    </div>
+  <% end %>
 </div>
