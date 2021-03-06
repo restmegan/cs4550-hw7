@@ -10,11 +10,13 @@
     <%= error_tag f, :name %>
   </div>
 
+  <!-- Not Functional yet
   <div class="form-group">
     <%= label f, :date %>
     <input class="form-control" type="text" id="my-date-picker" placeholder="Select a Date" data-input>
     <%= error_tag f, :name %>
   </div>
+  -->
 
   <div class="form-group">
     <%= label f, :desc %>

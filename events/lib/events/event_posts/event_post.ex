@@ -4,7 +4,6 @@ defmodule Events.EventPosts.EventPost do
 
   schema "eventposts" do
     field :desc, :string
-    field :date, :string
     field :name, :string
 
     timestamps()
@@ -13,7 +12,7 @@ defmodule Events.EventPosts.EventPost do
   @doc false
   def changeset(event_post, attrs) do
     event_post
-    |> cast(attrs, [:name, :date, :desc])
-    |> validate_required([:name, :date, :desc])
+    |> cast(attrs, [:name, :desc])
+    |> validate_required([:name, :desc])
   end
 end
