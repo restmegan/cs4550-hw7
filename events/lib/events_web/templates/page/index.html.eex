@@ -15,3 +15,9 @@
     </div>
   <% end %>
 </div>
+
+<div class="row">
+  <div class="col">
+    <%= link "New Event", to: Routes.event_post_path(@conn, :new) %>
+  </div>
+</div>
