@@ -1,0 +1,37 @@
+
+Web Dev Spring 2021 HW07 Status
+
+Answer the following questions:
+
+
+1. What's your name?
+Megan Rest
+
+
+2. What's the URL of the github repo with your work for this HW?
+https://github.com/restmegan/cs4550-hw7
+
+
+3. What's the URL that you deployed to?
+it's not deployed, it would be at events.megrest.com
+
+
+4. Is your app functionality complete? If not, what's missing?
+I couldn't get the date picker working
+
+
+5. Is your app properly deployed? If not, what went wrong?
+No, can't get the prod database to connect properly
+
+
+6. If you would like the deployment for an old homework to be reconsidered, what
+are the links to your Inkfish submission and deployed site?
+HW05
+Inkfish - https://inkfish.ntuck-neu.site/subs/5536
+Deployed site - hw05.megrest.com
+
+
+And here's a list of tasks for grading comments. Just leave this here:
+ - Development
+ - Deployment
+ - Submission
